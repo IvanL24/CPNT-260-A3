@@ -1,5 +1,83 @@
+<style>
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/splashbg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(5px);
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 20%;
+  background-color: olive;
+  border: 1px solid red;
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
+
+.card-heading {
+  text-align: center;
+  padding: 50px 10px;
+  background: radial-gradient(to center, grey, white);
+  font-size: clamp(3px, 2vw, 12px);
+}
+
+.choice {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.yes {
+  list-style-type: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(107, 165, 165);
+  width: 15vw;
+
+  margin: 8px;
+
+  border-radius: 15px;
+}
+
+.no {
+  list-style-type: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: paleturquoise;
+  width: 15vw;
+
+  margin: 8px;
+
+  border-radius: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: navy;
+}
+
+</style>
+
+
 <!DOCTYPE html>
 <html>
+
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+
 <head>
 
   <title>WARNING</title>
@@ -7,18 +85,28 @@
 </head>
 <body>
 
-  <div class="container">
-    <div class="heading">
-      <h1>YOU MUST BE AT LEGAL AGE TO ACCESS THIS SITE</h1>
-    </div>
-    
-    <div class="content">
-      <p>
-        This site is not suited for young audience, you must be over 18 and must agree to the terms and agreements to continue.
-      </p>
-    </div>
+  <main>
+    <div class="card">
+      <div class="card-heading">
+        <h1>YOU MUST BE AT LEGAL AGE TO ACCESS THIS SITE</h1>
+      </div>
+      
+      <div class="card-content">
+        <p>
+          This site is not suited for young audience, you must be over 18 and must agree to the terms and agreements to continue.
+        </p>
+      </div>
 
-  </div>
+      <div class="choice">
+        <nav>
+          <ul>
+            <li class="yes"><a href="#">Yes, I am 18 and over</a></li>
+            <li class="no"><a href="#">Get back to previous page</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </main>
   
 </body>
 </html>
