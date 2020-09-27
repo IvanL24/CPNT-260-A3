@@ -22,53 +22,156 @@ main {
   height: 100vh;
 }
 
+
 .card {
-  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: 50vh;
   background-color: olive;
   border: 1px solid red;
   border-radius: 15px;
-  margin-bottom: 50px;
+  margin: 20vw;
+
+  flex-grow: 1;
+  flex-shrink: 2;
+  flex-basis: 10ch;
 }
 
 .card-heading {
   text-align: center;
-  padding: 50px 10px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+
+  padding: 30px;
+  padding-bottom: 25px;
   background: radial-gradient(to center, grey, white);
-  font-size: clamp(3px, 2vw, 12px);
+}
+
+
+
+
+
+.card-content {
+  text-align: center;
+  font-size: clamp(15px, 3vw, 24px);
+  
+  
+  padding: 20px 10px;
+  margin: 0 50px 0 50px;
+  
+  border-radius: 15px;
+  background-color: rgb(170, 170, 32);
+
+ 
+  width: 30vw;
+
+  
 }
 
 .choice {
   display: flex;
   justify-content: center;
   text-align: center;
+  margin: 12px;
+  
 }
 
 .yes {
   list-style-type: none;
+  font-size: clamp(8px, 2vw, 16px);
+  font-weight: bold;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: rgb(107, 165, 165);
-  width: 15vw;
+  width: 190px;
+  height: 50px;
 
-  margin: 8px;
+  margin: 15px;
 
   border-radius: 15px;
 }
 
 .no {
   list-style-type: none;
+  font-size: 16px;
+  font-weight: bolder;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: paleturquoise;
-  width: 15vw;
+  width: 235px;
+  height: 48px;
 
-  margin: 8px;
+  margin: 15px;
 
   border-radius: 15px;
 }
 
 a {
+  font-size: 17px;
   text-decoration: none;
   color: navy;
 }
+
+.no:hover {
+  text-decoration: underline;
+}
+
+.yes:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1400px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1350px) {
+  .card {
+    height: 55vh;
+  }
+}
+
+@media (max-width: 770px) {
+  .card {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .yes {
+    margin: 10;
+  }
+
+  .no {
+    margin: 10;
+  }
+
+
+}
+
+@media (max-width: 540px) {
+  .card {
+    height: 70vh;
+  }
+
+  
+}
+
+
+
 
 </style>
 
@@ -76,11 +179,12 @@ a {
 <!DOCTYPE html>
 <html>
 
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
-
 <head>
-
-  <title>WARNING</title>
+    
+    <title>WARNING</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
 
 </head>
 <body>
@@ -97,12 +201,11 @@ a {
         </p>
       </div>
 
+      
       <div class="choice">
         <nav>
-          <ul>
-            <li class="yes"><a href="#">Yes, I am 18 and over</a></li>
-            <li class="no"><a href="#">Get back to previous page</a></li>
-          </ul>
+          <button class="yes"><a href="#">Yes, I am 18 and over</a></button>
+          <button class="no"><a href="#">Get back to previous page</a></button>
         </nav>
       </div>
     </div>
