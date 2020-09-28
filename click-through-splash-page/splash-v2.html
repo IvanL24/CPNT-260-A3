@@ -31,9 +31,10 @@ main {
   width: 20vw;
   height: 50vh;
   background-color: olive;
-  border: 1px solid red;
+  background-image: linear-gradient(rgb(187, 187, 2), olive,  rgb(187, 187, 2));
+  
   border-radius: 15px;
-  margin: 20vw;
+  margin: 0 20vw 0 20vw;
 
   flex-grow: 1;
   flex-shrink: 2;
@@ -81,13 +82,14 @@ main {
 
 .yes {
   list-style-type: none;
-  font-size: clamp(8px, 2vw, 16px);
+  font-size: 16px;
   font-weight: bold;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: rgb(107, 165, 165);
+  color: navy;
+ 
+  background-color: rgb(137, 207, 207);
   width: 190px;
   height: 50px;
-
   margin: 15px;
 
   border-radius: 15px;
@@ -98,27 +100,26 @@ main {
   font-size: 16px;
   font-weight: bolder;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: navy;
+  
+  
   background-color: paleturquoise;
   width: 235px;
   height: 48px;
-
   margin: 15px;
 
   border-radius: 15px;
 }
 
-a {
-  font-size: 17px;
-  text-decoration: none;
-  color: navy;
-}
 
 .no:hover {
-  text-decoration: underline;
+  background-color: rgb(70, 99, 99);
 }
 
+
+
 .yes:hover {
-  text-decoration: underline;
+  background-color: rgb(70, 99, 99);
 }
 
 @media (max-width: 1400px) {
@@ -128,21 +129,121 @@ a {
     align-items: center;
     flex-direction: column;
   }
+
+  .card {
+    height: 55vh;
+  }
+
+  .card-content {
+    width: 600px;
+  }
+
 }
 
 @media (max-width: 1350px) {
   .card {
+    height: 60vh;
+  }
+
+  .card-content {
+    width: 600px;
+  }
+
+  .yes {
+    font-size: 17px;
+
+    width: 300px;
+    height: 40px;
+
+    margin: 6px;
+  }
+
+  .no {
+    font-size: 17px;
+
+    width:300px;
+    height: 40px;
+
+    margin: 6;
+  }
+}
+
+@media (max-width: 1130px) {
+  .card {
     height: 55vh;
+  }
+
+  .card-heading {
+    font-size: 15px;
+
+    margin-top: 10px;
+    padding: 15px;
+  }
+
+  .card-content {
+    font-size: 25px;
+    
+    width: 500px;
+    margin-bottom: 20px;
+  }
+
+  .yes {
+    font-size: 17px;
+
+    width: 300px;
+    height: 40px;
+
+    margin: 6px;
+  }
+
+  .no {
+    font-size: 17px;
+
+    width:300px;
+    height: 40px;
+
+    margin: 6;
+  }
+}
+
+@media (max-width: 980px) {
+  .card-content {
+    width: 390px;
+    
   }
 }
 
 @media (max-width: 770px) {
   .card {
-    padding-bottom: 20px;
+    height: 60vh;
+  }
+
+  .card-heading {
+    font-size: 15px;
+  }
+
+  .card-content {
+    width: 45vw;
+  }
+
+  .yes {
+    font-size: 17px;
+
+    width: 300px;
+  }
+
+  .no {
+    font-size: 17px;
+
+    width: 300px;
   }
 }
 
 @media (max-width: 600px) {
+  .card {
+    height: 90vw;
+  }
+  
   nav {
     display: flex;
     flex-direction: column;
@@ -152,10 +253,17 @@ a {
   }
 
   .yes {
+    font-size: 15px;
+
+    width: 200px;
     margin: 10;
+
   }
 
   .no {
+    font-size: 15px;
+
+    width: 200px;
     margin: 10;
   }
 
@@ -167,7 +275,170 @@ a {
     height: 70vh;
   }
 
+  .card-heading {
+    font-size: 18px;
+  }
+
+  .card-content {
+    font-size: clamp(18px, 3vw, 24px);
+
+    width: 40vw;
+
+
+  }
+}
+
+@media (max-width: 490px) {
   
+  .card {
+    height: 60vh;
+  }
+
+  .card-heading {
+    font-size: 16px;
+  }
+
+  .card-content {
+    font-size: 15px;
+  }
+
+  a {
+    color: teal;
+    font-size: 13px;
+  }
+
+  .no {
+    width: 190px;
+    height: 35;
+  }
+
+  .yes {
+    width: 190px;
+    height: 35;
+  }
+  
+}
+
+@media (max-width: 450px) {
+  .card {
+    height: 60vh;
+  }
+
+  .card-heading {
+    padding: 15px;
+  }
+
+  .card-content {
+    margin: 10px 50px 10px 50px;
+  }
+
+  .yes {
+    font-size: 15px;
+
+    width: 200px;
+  }
+
+  .no {
+    font-size: 15px;
+
+    width: 200px;
+  }
+}
+
+@media (max-width: 420px) {
+  .card {
+    height: 60vh;
+  }
+  
+  .card-heading{
+    padding: 15px;
+  }
+
+
+}
+
+@media (max-width: 385px) {
+  .card {
+    height: 65vh;
+  }
+}
+
+@media (max-width: 375px) {
+  .card {
+    height: 65vh;
+  }
+
+  .card-heading {
+    font-size: 13px;
+  }
+
+  .card-content {
+    width: 50vw;
+  }
+
+  .yes {
+    font-size: 12px;
+
+    width: 160px;
+  }
+
+  .no {
+    font-size: 12px;
+
+    width: 160px;
+  }
+}
+
+@media (max-width: 320px) {
+  .card {
+    height: 70vh;
+  }
+  .card-heading {
+    font-size: 10.5px;
+
+    padding: 15px;
+  }
+
+  .no {
+    font-size: 12px;
+  
+    width: 160px;
+    margin: 3px;
+  }
+
+  .yes {
+    font-size: 12px;
+
+    width: 160px;
+    margin: 2;
+  }
+
+}
+
+@media (max-width: 230px) {
+  .card {
+    height: 70vh;
+  }
+  .card-heading {
+    font-size: 10.5px;
+
+    padding: 15px;
+  }
+
+  .no {
+    font-size: 10px;
+  
+    width: 120px;
+    margin: 3px;
+  }
+
+  .yes {
+    font-size: 10px;
+
+    width: 120px;
+    margin: 2;
+  }
+
 }
 
 
@@ -204,8 +475,9 @@ a {
       
       <div class="choice">
         <nav>
-          <button class="yes"><a href="#">Yes, I am 18 and over</a></button>
-          <button class="no"><a href="#">Get back to previous page</a></button>
+          <a href="https://cowboyssmoke.shop/"><button class="yes">I am not a miner</button></a>
+          <a href="https://www.google.ca/"><button class="no"> back to previous page</button></a>
+
         </nav>
       </div>
     </div>
