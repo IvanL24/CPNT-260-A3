@@ -1,3 +1,55 @@
+<style>
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    grid-template-rows: repeat(9, 2fr);
+    align-items: center;
+    flex-direction: column;
+
+    border: 1px solid red;
+    background-color: lightgray;    
+
+    height: 80vh;
+
+
+  }
+
+  .bgimg {
+    border: 1px solid red;
+    display: flex;
+    height: 50px;
+
+    grid-column: span 5;
+    grid-row: span 3;
+  }
+
+  .profile {
+    border: 1px solid red;
+    
+  }
+
+</style>
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,11 +63,11 @@
       river
     </div>
 
-    <div>
+    <div class="profile">
       jane doe
     </div>
 
-    <div>
+    <div class="content">
       content
     </div>
 
