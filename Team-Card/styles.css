@@ -1,3 +1,5 @@
+/* need to make my own utilities and resets */
+
 * {
   box-sizing: border-box;
   /* outline: 1px solid red;  */
@@ -13,6 +15,7 @@ body {
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
+/* whole card */
 .container {
   height: 71ch; 
   
@@ -22,11 +25,13 @@ body {
   box-shadow: 5px 5px 8px lightgray;
 }
 
+/* top part */
 .card {
   height: 20ch; 
   width: 40ch;
 }
 
+/* background river */
 .banner {
   display: flex;
   justify-content: center;
@@ -40,6 +45,7 @@ body {
   height: 100%;
 }
 
+/* circle profile */
 .profile {
           
   width: 18ch;
@@ -52,6 +58,7 @@ body {
   border-radius: 50%;
 }
 
+
 .content {
     display: flex;
     align-items: center;
@@ -60,15 +67,14 @@ body {
     text-align: center;
     margin: 0 6% 0 6%;
     background-color:  rgb(248, 246, 246);
-
-    
-   
 }
 
+/* header */
 h1 {
   margin: 4ch 0 0 0;
 }
 
+/* lorem ipsum */
 p {
   font-size: 18.5px;
   width: 274px;
@@ -85,6 +91,7 @@ footer {
   
 }
 
+/* logo setting */
 .icons {
   font-size: 5ch;
   display: flex;
