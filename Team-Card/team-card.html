@@ -1,47 +1,4 @@
-<style>
 
-  * {
-    box-sizing: border-box;
-  }
-
-  body {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
-
-  .card {
-    display: grid;
-    grid-template-columns: repeat(5, 2fr);
-    grid-template-rows: repeat(9, 2fr);
-    align-items: center;
-    flex-direction: column;
-
-    border: 1px solid red;
-    background-color: lightgray;    
-
-    height: 80vh;
-
-
-  }
-
-  .bgimg {
-    border: 1px solid red;
-    display: flex;
-    height: 50px;
-
-    grid-column: span 5;
-    grid-row: span 3;
-  }
-
-  .profile {
-    border: 1px solid red;
-    
-  }
-
-</style>
 
 
 
@@ -56,25 +13,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Team Card</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="card">
-    <div class="bgimg">
-      river
+  <div class="container">
+    <div class="card">
+      <div class="banner">
+        <div class="profile">
+        </div>
+      </div>
     </div>
-
-    <div class="profile">
-      jane doe
-    </div>
-
-    <div class="content">
-      content
-    </div>
-
-    <footer>
-      loogos
-    </footer>
-  </main>
-  
+        <div class="content">
+          
+          <h1>Jane Doe</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, nihil? Inventore eligendi veritatis numquam nemo non blanditiis repellat esse? Quis odio iusto incidunt. Veritatis quidem, sunt doloribus dignissimos ab eaque?
+          </p>
+        </div>
+      <footer>
+        <ul class="icons">
+          <li><i class="fab fa-twitter"></i></li>
+          <li><i class="fab fa-github"></i></li>
+          <li><i class="fab fa-facebook"></i></li>
+          <li><i class="fab fa-instagram"></i></li>
+        </ul>
+      </footer>
+  </div>  
 </body>
 </html>
