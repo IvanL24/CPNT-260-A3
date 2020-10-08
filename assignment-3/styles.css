@@ -32,12 +32,13 @@ fieldset {
 }
 
 legend {
+  text-align: center;
   font-size: 3ch;
 }
 
 h1 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: clamp(10px, 2vw, 32px);
+  font-size: 5ch;
 }
 
 .content {
