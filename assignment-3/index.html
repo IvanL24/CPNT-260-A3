@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/CPNT-260/assignment 3/typography.css">
+  <title>Subscription Form</title>
+</head>
+<body>
+  <div class="container">
+    <form action="#">
+      <fieldset class="outer">
+        <legend>sign-up form</legend>
+        <div class="content">
+          <div class="forms"><h1>JOIN OUR COMMUNITY</h1></div>
+            <!-- creat fillout forms -->
+            <label for="fname">First name:<span>*</span></label>
+            <p class="fname">
+              <input type="text" id="first" name="first name" placeholder="first name" required>
+            </p>
+            <label for="lname">Last name:<span>*</span></label>
+            <p>
+              <input type="text" id="last" name="last name" placeholder="last name" required>
+            </p>
+            <label for="email">Email:<span>*</span></label>
+            <p class="email">
+              <input type="text" id="email" name="email address" placeholder="email" required>
+            </p>
+            <label for="password">Password:<span>*</span></label>
+            <p class="password">
+              <input type="password" id="pwd" name="pwd" placeholder="password" required>
+            </p>
+          </div>
+            <!-- add choices of favourites -->
+          <div class="choices">
+            
+            <select name="meals" id="meals">
+              <option value="choose">Choose your meal</option>
+              <option value="Steak">Steak</option>
+              <option value="Sandwich">Sandwich</option>
+              <option value="Roasted Turkey">Roasted Turkey</option>
+            </select>
+          </div>
+            <div class="check">
+              <label>
+                <input class="checkbox" type="checkbox" name="notification"><span class="notif">Allow this site to send notifications</span>
+              </label>
+            </div>
+          <footer>
+            <!-- submit button at bottom -->
+            <button class="submit">Submit</button>
+          </footer>
+      </fieldset>
+    </form>
+  </div>
+  
+</body>
+</html>
