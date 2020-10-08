@@ -8,7 +8,8 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background-image: url(/CPNT-260/img/japan-attractions-kyoto.jpg);
+  margin: 0;
+  background-image: url(img/japan-attractions-kyoto.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
